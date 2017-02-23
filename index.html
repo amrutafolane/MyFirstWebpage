@@ -1,0 +1,339 @@
+<!--WPL HW2-->
+
+<!DOCTYPE html>
+<html>
+<head>
+
+	<title> My Profile- Amruta Folane</title>
+	<body bgcolor="#FFFFF0">
+	<meta name="description" content="This page tells about Amruta Folane." />	
+  	<meta name="keywords" content="HTML, CSS, XML, Amruta Folane, Profile, webpage, WPL">
+  	<meta name="author" content="Amruta Folane">
+
+  	<link rel="stylesheet" type="text/css" href="wplHw2CSS.css"> 
+
+	<script>
+	<!--VALIDATION FOR EMAIL_ID-->
+		function validateEmailId() {
+    		var x = document.forms["contactForm"]["emailId"].value;
+    		var at = x.indexOf("@");
+    		var dot = x.lastIndexOf(".");
+    		if ( (at < 1) || (dot < at + 2) || (dot + 2 >= x.length) ) {
+        			alert("Not a valid e-mail address");
+        			return false;
+    			}
+		}
+
+	<!--VALIDATION FOR FIRST & LAST NAME-->
+		function validateFirstLastNames(inputtxt) {
+			var allLetters = /^[A-Za-z]+$/;
+			if (inputtxt.value.match(allLetters)) {
+				return true;
+			} else {
+				alert ("Not a valid name. Enter only alphabets!");
+				return false;
+			}
+		}
+
+	<!--VALIDATION FOR Phone Number-->
+		function validatePhoneNumber() {
+
+		}
+	
+	</script>
+
+</head> 
+
+<body>
+		<article id="EntireArticle">
+		<div class="article" id="myName">
+			<h3> AMRUTA FOLANE </h3>
+			<h5> MS Computer Science at The Univeristy of Texas at Dallas </h5> 
+			<hr/>
+		</div> 
+			&nbsp
+			<img src="https://media.licdn.com/mpr/mpr/shrinknp_200_200/AAEAAQAAAAAAAAI3AAAAJGNmZTQ1NDY5LWJmNDktNGNhNS04YmY2LTMyYWZjZjJiMTg1MA.jpg" align="right">
+
+		<ul>
+			<h4> OBJECTIVE: </h4> <p> Seeking an intern position in the field of Software development for Summer 2017 </p>
+
+		</ul>
+		<ul>
+			<h4> EDUCATION: </h4>
+			<li> University of Texas at Dallas &nbsp&nbsp&nbsp Exp. May 2018</li>
+			<li> Savitribai Phule Pune University &nbsp&nbsp  May 2015</li>
+		</ul>
+
+		<ul> 
+
+			<h4> EXPERIENCE: </h4>
+
+			<!--COGNI-->
+			<li> Programmer Analyst Trainee, Cognizant Technology Solutions, Pune, INDIA </li>
+			<ul> 
+				<li> Got trained in SQL, JAVA </li>
+				<li> Worked on a team of five members dealing with back-end Java project of a web application </li>
+				<li> Assisted in designing and developing software application as per client requirements </li>
+			</ul>
+
+			<!--TATA-->
+			<li> Engineering Intern at TATA Motors, Pune, INDIA </li>
+			<label> HLA assembly inspection system for 2.2ltr engine using Machine vision technology </label> 
+			<ul>
+				<li> Inspected the rocker arm connected to the HLA (Hydraulic Lash Adjuster) and the inlet/exhaust valves of the engine, often
+				misplaced from its original position by manual handling/other reasons, by image processing </li>
+				<li> My contribution to the project was programming the PLC used for the hardware of the camera installation and the vision
+				system used for inspection </li>
+				<li> Work resulted in fewer number of faulty engines and less frequent vehicle maintenance </li>
+				<li> Technologies: Java, Python </li>
+			</ul>
+
+		</ul>
+
+		<ul>
+				<h4> TECHNICAL SKILLS: </h4>
+				<li> Programming Languages : Java, SQL, Python, X/HTML, CSS, JavaScript, MATLAB </li>
+				<li> Software Tools : Eclipse, NetBeans, MySQL, Turbo C, MATLAB, Multisim </li>
+		</ul>
+			
+		
+		<section class="projects" id="acads">
+			<ul>
+				<h4> ACADEMIC PROJECTS: </h4>
+
+				<!--MAZE-->
+				<li > MAZE: 											[Fall 2016, UTD]</li>
+				<ul>
+				<li> This Java project generates a random maze which can be seen in newspapers. </li>
+				<li> The project uses disjoint sets and each cell is connected to every other cell in the maze, making it more complex. The output is shown as a GUI output using Java Swing. </li>					
+				</ul>
+
+				<!--WORD PUZZLE-->
+				<li  WORD PUZZLE:								[Fall 2016, UTD]</li>
+				<ul>
+				<li> This Java project creates a random word puzzle and finds out the meaningful words from a word dictionary when it is stored in various data structures like linkedlist, tree and a hash table. </li>				
+				</ul>
+
+				<!--DRDO-->
+				<li > Obstacle detection and classification for autonomous ground vehicle, DRDO, Pune, India [July 2014 – May 2015] </li>
+				<ul>
+					<li> Effectively developed the software code for a system which aids an unmanned vehicle to successfully navigate roads, amid obstacles using computer vision techniques and used Gaussian Mixtures for modeling the background</li>
+					<li> Played role of a programmer and did background research for image processing and computer vision in a team of three </li>
+					<li> Technologies: MATLAB </li>
+				</ul>
+
+				<!--GRADING OF APPLES, MIT-->
+				<li > Grading of apples using image processing [Jan 2014 – May 2014] </li>
+				<ul>
+					<li> Collaboratively worked with a team of three to develop a system for the grading of apples using image processing by extracting
+					features from the real-time images captured depending on the color, texture, external blemishes on the fruit</li>
+					<li> Coded in MATLAB & programmed the microcontroller for the hardware </li>
+				</ul>
+		</ul>	
+		</section>
+		
+		
+		<section>
+			<ul>
+			<h4> RELEVANT COURSEWORK: </h4>
+			<table id="tableCourses">
+			<tr>
+				<th> Course Name</th>
+				<th> Semester </th>
+				<th> Year </th> 	
+			</tr>
+			
+			<tr>
+				<td> Web Programming Languauges </td> 
+				<td> Spring  </td>
+				<td> 2017</td>
+			</tr>
+
+			<tr>
+				<td> Database Design </td> 
+				<td> Spring  </td>
+				<td> 2017</td>
+			</tr>
+
+			<tr>
+				<td> Algorithm Analysis & Data Structures </td> 
+				<td> Fall  </td>
+				<td> 2016 </td>
+			</tr>
+
+			</table>
+			<p> Design & Analysis of Computer Algorithms | Machine Learning | System Programming & Operating Systems | Soft Computing | Computer Networks | Computer Organization & Architecture </p> 	
+		</ul>  	
+		</section>	
+		
+		</article>
+		
+		<hr/>
+
+		<section >
+			<!--Interests image-->
+			<div id="Interests">
+				<h4 > Enough about the techie stuff, want to know what I do for fun? :D</h4>
+
+				<img src="myInterests.jpg"  usemap="#image-map">
+
+<map name="image-map">
+    <area target="_blank" alt="Read - nothing is as inexpensive that pays you later!" title="Read - nothing is as inexpensive that pays you later!" href="https://www.bustle.com/articles/100468-11-reasons-why-reading-is-the-single-best-hobby-in-the-universe" coords="6,92,208,4" shape="rect">
+
+    <area target="_blank" alt="Code! Code! Code!" title="Code! Code! Code!" href="https://www.youtube.com/watch?v=cKhVupvyhKk" coords="2,98,92,292" shape="rect">
+
+    <area target="_blank" alt="Music is Life!" title="Music is Life!" href="https://en.wikipedia.org/wiki/Music" coords="94,92,208,208" shape="rect">
+
+    <area target="_blank" alt="Run for your life, literally!" title="Run for your life, literally!" href="http://www.active.com/running/articles/10-reasons-running-is-good-for-you" coords="208,3,296,207" shape="rect">
+
+    <area target="_blank" alt="Cooking makes me happy!" title="Cooking makes me happy!" href="https://en.wikipedia.org/wiki/Cooking" coords="90,208,298,298" shape="rect">
+</map>
+			</div>
+			</section>
+		&nbsp
+		&nbsp
+		&nbsp
+
+		<hr/>
+
+		<!--FORM: CONTACT ME-->
+		<div id="form">
+		<form name ="contactForm" action="return.html" autocomplete="on" onsubmit=" return !!(validateEmailId() & validateFirstLastNames(document.contactForm.FirstName) & validateFirstLastNames(document.contactForm.LastName) );" method="post">
+		<h4>Contact me here! </h4>
+			<table>
+				<tr>
+					<td> First Name: </td>
+					<td> <input type="text" name="FirstName" maxlength="15" placeholder="First name"/> </td>
+				</tr>
+
+				<tr>
+					<td> Last Name: </td>
+					<td> <input type="text" name="LastName" maxlength="15" placeholder="Last name"/> </td>
+				</tr>
+
+				<tr>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+	  			</tr>
+
+	  			<tr>
+	  				<td> Gender </td>
+	  				<td><input type="radio" name="radSex" value="male" />Male &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <input type="radio" name="radSex" value="female" />Female</td>
+	  			</tr>
+
+	  			<tr>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+	  			</tr>
+
+	  			<tr>
+		 			<td>How did you hear about Me?:</td>
+		 			<td>
+			  			<select name="selReferrer">
+				   			<option selected="selected" value="">Select answer</option>
+				   			<option value="website" >Another website</option>
+				   			<option value="Linkedin">LinkedIn</option>
+				   			<option value="friend">From a friend</option>
+				   			<option value="other">Other</option>
+			  			</select>
+		 			</td>
+	  			</tr>
+
+	  			<tr>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+	  			</tr>
+
+	  			<tr>
+	  				<td> Interesting profile? <br> Enter email_id,  I'll get back to you! </td>						
+	  				<td> <input type="text" name="emailId"> </td>
+	  				
+	  			</tr>
+
+	  			<tr>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+	  			</tr>
+
+	  			
+	  			<tr>
+	  				<td> Phone Number: </td>
+	  				<td> <input  id="phoneNumber" name="phoneNumber" placeholder="xxx-xxx-xxxx" type="tel" pattern="^\d{3}-\d{3}-\d{4}$" required> </td>
+	  			</tr>
+	  			
+
+	  			<tr>
+	  				<td> <small> Enter number without code </small></td>
+	  			</tr>
+
+	  			<tr>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+	  			</tr>
+
+				<tr>
+       				<td> How would you like me to get in touch?  </td></tr>
+       					<tr><td>Phone</td><td> <input type="checkbox" name="place" value="Phone"></td></tr>
+				       <tr><td>Email</td><td> <input type="checkbox" name="place" value="Email"></td></tr>
+       
+      			</tr>
+
+	  			
+
+	  			<tr>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+	  			</tr>
+
+	  			
+	  			<tr>
+	  				
+	  					<td> 
+	  						<input class = "button" type="submit" name="Submit" >
+	  						
+	  					</td>
+	  						
+	  					<td><input class = "button" type="reset" value="Reset"></td>	  				
+	  			</tr>
+	  			
+	  			
+
+				<tr>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+	  			</tr>
+
+	  			<tr>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+	  			</tr>
+
+			</table>
+			
+		</form>
+		</div>
+
+		<tr>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+	  			</tr>
+
+	  	<tr>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+	  			</tr>
+
+		<!--NAVIGATION LINKS-->
+		<nav>
+			<a href = "https://www.linkedin.com/in/amrutafolane/" target="_blank"> Connect with me on LinkedIn  </a> |
+			<a href = "https://github.com/amrutafolane" target="_blank">  Github </a> |
+    		<a href="wplHw2Part2.html" target=_blank>Solution for Problem 2</a>
+		</nav>
+
+		<footer id="footer">
+			<h5> -Webpage built and maintained by Amruta Folane </h5>
+		</footer>
+</body>		
+
+		
+</html>
